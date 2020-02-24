@@ -10,9 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install
-      uses: Borales/actions-yarn@v2.1.0
+      uses: sergioramos/yarn-actions/install@master
       with:
-        cmd: install
+        frozen-lockfile: true
     - name: build
       uses: Borales/actions-yarn@v2.1.0
       with:
