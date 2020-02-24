@@ -1,5 +1,5 @@
 {
-  "name": "re-logger",
+  "name": "@ohana54/re-logger",
   "version": "0.1.0",
   "description": "Basic logger with log handlers architecture",
   "main": "src/Logger.bs.js",
