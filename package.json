@@ -1,0 +1,31 @@
+{
+  "name": "re-logger",
+  "version": "0.1.0",
+  "description": "Basic logger with log handlers architecture",
+  "main": "src/Logger.bs.js",
+  "scripts": {
+    "build": "bsb -make-world",
+    "build:watch": "bsb -w",
+    "test": "bsb && jest && npm run lint",
+    "watch": "jest --watch --onlyChanged",
+    "lint": "bsb && bsrefmt --in-place src/*.re test/*.re",
+    "precommit": "bsb && lint-staged"
+  },
+  "author": "Tomer Ohana <ohana54@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@glennsl/bs-jest": "0.4.6",
+    "bs-platform": "7.1.1",
+    "jest": "^23.3.0",
+    "jest-teamcity-reporter": "^0.9.0",
+    "lint-staged": "^8.0.0"
+  },
+  "dependencies": {
+    "deepmerge": "^3.2.0"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.re": ["bsrefmt --in-place", "git add"]
+    }
+  }
+}
