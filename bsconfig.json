@@ -1,6 +1,7 @@
 {
   "name": "@ohana54/re-logger",
-  "version": "0.1.0",
+  "namespace": "re-logger",
+  "version": "0.3.0",
   "sources": [
     {
       "dir": "src",
@@ -22,7 +23,6 @@
   "warnings": {
     "error": "+a"
   },
-  "namespace": true,
   "refmt": 3
 }
   
