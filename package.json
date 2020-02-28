@@ -1,6 +1,6 @@
 {
   "name": "@ohana54/re-logger",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Basic logger with log handlers architecture",
   "scripts": {
     "build": "bsb -make-world",
